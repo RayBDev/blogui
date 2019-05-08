@@ -54,6 +54,8 @@ class Actions extends Component {
           </div>
         </section>
 
+        {/* ---------- MODALS ----------- */}
+
         {/* ADD POST MODAL */}
         <Modal
           show={this.state.show === "post"}
