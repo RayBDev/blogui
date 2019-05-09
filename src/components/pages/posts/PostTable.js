@@ -1,11 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 
-const Posts = () => {
+const PostTable = () => {
   return (
-    <section id="posts">
+    <section id="post-table">
       <div className="container">
         <div className="row">
-          <div className="col-md-9">
+          <div className="col">
             <div className="card">
               <div className="card-header">
                 <h4>Latest Posts</h4>
@@ -89,43 +90,39 @@ const Posts = () => {
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card text-center bg-primary text-white mb-3">
-              <div className="card-body">
-                <h3>Posts</h3>
-                <h4 className="display-4">
-                  <i className="fas fa-pencil-alt" /> 6
-                </h4>
-                <a href="/posts/" className="btn btn-outline-light btn-sm">
-                  View
-                </a>
-              </div>
-            </div>
-
-            <div className="card text-center bg-success text-white mb-3">
-              <div className="card-body">
-                <h3>Category</h3>
-                <h4 className="display-4">
-                  <i className="fas fa-folder" /> 4
-                </h4>
-                <a href="/categories/" className="btn btn-outline-light btn-sm">
-                  View
-                </a>
-              </div>
-            </div>
-
-            <div className="card text-center bg-warning text-white mb-3">
-              <div className="card-body">
-                <h3>Users</h3>
-                <h4 className="display-4">
-                  <i className="fas fa-users" /> 4
-                </h4>
-                <a href="/users/" className="btn btn-outline-light btn-sm">
-                  View
-                </a>
-              </div>
+              <nav className="ml-4">
+                <ul className="pagination">
+                  <li className="page-item disabled">
+                    <Link to="#" activeClassName="active" className="page-link">
+                      Previous
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      to="/posts/"
+                      activeClassName="active"
+                      className="page-link"
+                    >
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link to="#" activeClassName="active" className="page-link">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link to="#" activeClassName="active" className="page-link">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link to="#" activeClassName="active" className="page-link">
+                      Next
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -134,4 +131,4 @@ const Posts = () => {
   )
 }
 
-export default Posts
+export default PostTable

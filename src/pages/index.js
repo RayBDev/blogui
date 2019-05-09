@@ -2,17 +2,16 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/pages/index/Header"
+
 import Actions from "../components/pages/index/Actions"
-import Posts from "../components/pages/index/Posts"
+import PostSummary from "../components/pages/index/PostSummary"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Header />
+  <Layout icon="cog" title="Dashboard" color="primary">
+    <SEO title="Home" keywords={[`blogui`, `application`, `react`]} />
     <main>
       <Actions />
-      <Posts />
+      <PostSummary />
     </main>
   </Layout>
 )
