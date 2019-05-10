@@ -3,6 +3,7 @@
   "description": "Blog Admin Control Panel template created in Gatsby using Bootstrap.",
   "author": "Ray Bernard",
   "dependencies": {
+    "ckeditor": "^4.11.4",
     "ckeditor4-react": "^0.1.0",
     "gatsby": "^2.4.2",
     "gatsby-cli": "^2.5.12",
@@ -19,9 +20,11 @@
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typescript": "^3.4.5"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
   "keywords": [
@@ -30,6 +33,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
