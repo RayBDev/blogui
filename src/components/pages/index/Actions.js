@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import CKEditor from "ckeditor4-react"
 
 import Button from "react-bootstrap/Button"
 import Modal from "react-bootstrap/Modal"
@@ -94,7 +93,7 @@ class Actions extends Component {
               <div className="form-group">
                 <label htmlFor="body">Body</label>
 
-                <CKEditor />
+                <textarea className="form-control" />
               </div>
             </form>
           </Modal.Body>

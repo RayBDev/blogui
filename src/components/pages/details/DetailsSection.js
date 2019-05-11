@@ -1,5 +1,4 @@
 import React from "react"
-import CKEditor from "ckeditor4-react"
 
 const DetailsSection = () => {
   return (
@@ -15,12 +14,18 @@ const DetailsSection = () => {
                 <form>
                   <div className="form-group">
                     <label htmlFor="title">Title</label>
-                    <input type="text" className="form-control" value="Post One" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      value="Post One"
+                    />
                   </div>
                   <div className="form-group">
                     <label htmlFor="category">Category</label>
                     <select className="form-control">
-                      <option value="" selected>Web Development</option>
+                      <option value="" selected>
+                        Web Development
+                      </option>
                       <option value="">Tech Gadgets</option>
                       <option value="">Business</option>
                       <option value="">Health & Wellness</option>
@@ -43,7 +48,15 @@ const DetailsSection = () => {
                   <div className="form-group">
                     <label htmlFor="body">Body</label>
 
-                    <CKEditor data="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias esse, ratione expedita, reiciendis sapiente repudiandae eos laboriosam delectus recusandae, iste a explicabo nemo? Eum vitae beatae tempore aliquam sed cumque deserunt, magnam ea libero, illum architecto mollitia nihil repellendus, odit dignissimos dicta quae quas? Praesentium voluptate explicabo voluptatum. Cum, asperiores!"/>
+                    <textarea className="form-control">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Incidunt obcaecati laudantium quisquam cumque distinctio
+                      repellat qui aliquam vitae ipsa harum soluta impedit eum
+                      aspernatur odit ratione, quae possimus ea. Dolore tempora,
+                      saepe distinctio accusamus earum facilis nihil adipisci
+                      animi debitis quo labore repellat, eos ipsa sint commodi
+                      voluptatem magni vitae.
+                    </textarea>
                   </div>
                 </form>
               </div>

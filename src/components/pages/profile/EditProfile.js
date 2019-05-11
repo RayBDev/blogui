@@ -1,5 +1,4 @@
 import React from "react"
-import CKEditor from "ckeditor4-react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -9,7 +8,7 @@ const EditProfile = () => (
       query {
         placeholderImage: file(relativePath: { eq: "avatar.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -45,17 +44,15 @@ const EditProfile = () => (
                     </div>
                     <div className="form-group">
                       <label htmlFor="name">Bio</label>
-                      <CKEditor
-                        data="Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Nemo quibusdam ratione quisquam quidem culpa animi
-                        voluptatibus veniam incidunt eaque, eos impedit!
-                        Praesentium sed eaque aperiam corporis recusandae iusto
-                        pariatur molestiae? Molestias, tenetur? Omnis, rerum!
-                        Laborum illo exercitationem, modi, debitis fuga non
-                        eligendi porro cumque at dignissimos, dolorem aliquid
-                        vero natus!"
-                        className="form-control"
-                      />
+                      <textarea className="form-control">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus, odit debitis? Magnam corrupti tempore illo
+                        nihil nam, nobis nesciunt minima! Aspernatur eveniet
+                        eius et, quia at sit officiis vitae commodi dolorum sint
+                        neque deleniti architecto. Beatae quidem quasi voluptate
+                        repellendus incidunt consectetur labore, suscipit
+                        pariatur dolorem cum totam ratione voluptatum.
+                      </textarea>
                     </div>
                   </form>
                 </div>
