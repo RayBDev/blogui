@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const UserTable = () => {
   return (
@@ -25,9 +26,9 @@ const UserTable = () => {
                     <td>John Doe</td>
                     <td>jdoe@gmail.com</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -35,9 +36,9 @@ const UserTable = () => {
                     <td>Sally Johnson</td>
                     <td>sjohnson@gmail.com</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -45,9 +46,9 @@ const UserTable = () => {
                     <td>Mary Salinger</td>
                     <td>marysal@yahoo.com</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 </tbody>

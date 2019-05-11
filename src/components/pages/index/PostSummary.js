@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const PostSummary = () => {
   return (
@@ -27,9 +28,9 @@ const PostSummary = () => {
                     <td>Web Development</td>
                     <td>Jan 10 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -38,9 +39,9 @@ const PostSummary = () => {
                     <td>Tech Gadgets</td>
                     <td>Jan 12 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -49,9 +50,9 @@ const PostSummary = () => {
                     <td>Web Development</td>
                     <td>Jan 13 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -60,9 +61,9 @@ const PostSummary = () => {
                     <td>Business</td>
                     <td>Jan 16 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -71,9 +72,9 @@ const PostSummary = () => {
                     <td>Web Development</td>
                     <td>Jan 20 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -82,9 +83,9 @@ const PostSummary = () => {
                     <td>Health & Welness</td>
                     <td>Jan 25 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 </tbody>
@@ -98,9 +99,9 @@ const PostSummary = () => {
                 <h4 className="display-4">
                   <i className="fas fa-pencil-alt" /> 6
                 </h4>
-                <a href="/posts/" className="btn btn-outline-light btn-sm">
+                <Link to="/posts/" className="btn btn-outline-light btn-sm">
                   View
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -110,9 +111,12 @@ const PostSummary = () => {
                 <h4 className="display-4">
                   <i className="fas fa-folder" /> 4
                 </h4>
-                <a href="/categories/" className="btn btn-outline-light btn-sm">
+                <Link
+                  to="/categories/"
+                  className="btn btn-outline-light btn-sm"
+                >
                   View
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -122,9 +126,9 @@ const PostSummary = () => {
                 <h4 className="display-4">
                   <i className="fas fa-users" /> 4
                 </h4>
-                <a href="/users/" className="btn btn-outline-light btn-sm">
+                <Link to="/users/" className="btn btn-outline-light btn-sm">
                   View
-                </a>
+                </Link>
               </div>
             </div>
           </div>

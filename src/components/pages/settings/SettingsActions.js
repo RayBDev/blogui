@@ -1,18 +1,19 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const SettingsActions = () => (
   <section id="settings-actions" className="py-4 mb-4 bg-light">
     <div className="container">
       <div className="row">
         <div className="col-md-3">
-          <a href="/" className="btn btn-light btn-block">
+          <Link to="/" className="btn btn-light btn-block">
             <i className="fas fa-arrow-left" /> Back To Dashboard
-          </a>
+          </Link>
         </div>
         <div className="col-md-3">
-          <a href="/" className="btn btn-success btn-block">
+          <Link to="/" className="btn btn-success btn-block">
             <i className="fas fa-check" /> Save Changes
-          </a>
+          </Link>
         </div>
       </div>
     </div>

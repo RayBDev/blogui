@@ -28,9 +28,9 @@ const PostTable = () => {
                     <td>Web Development</td>
                     <td>Jan 10 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -39,9 +39,9 @@ const PostTable = () => {
                     <td>Tech Gadgets</td>
                     <td>Jan 12 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -50,9 +50,9 @@ const PostTable = () => {
                     <td>Web Development</td>
                     <td>Jan 13 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -61,9 +61,9 @@ const PostTable = () => {
                     <td>Business</td>
                     <td>Jan 16 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -72,9 +72,9 @@ const PostTable = () => {
                     <td>Web Development</td>
                     <td>Jan 20 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
@@ -83,9 +83,9 @@ const PostTable = () => {
                     <td>Health & Welness</td>
                     <td>Jan 25 2018</td>
                     <td>
-                      <a href="/details/" className="btn btn-secondary">
+                      <Link to="/details/" className="btn btn-secondary">
                         <i className="fas fa-angle-double-right" /> Details
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 </tbody>
